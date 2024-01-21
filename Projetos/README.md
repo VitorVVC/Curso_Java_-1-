@@ -1,6 +1,6 @@
 ### Projetos
 
-- Separarei os projetos em outros repositorios por questão re organização, porém deixarei os links dos mesmos neste documento
+- Separarei os projetos em outros repositorios por questão de organização, porém deixarei os links dos mesmos neste documento
 
 
 - `Projeto [1]: (Xadrez)`
