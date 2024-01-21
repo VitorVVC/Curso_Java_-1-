@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+/Users/vitorvargas/Desktop/Faculdade/Progamação Orientada || Java/Curso De Java/.metadata/.plugins/org.eclipse.jdt.core
+2577421389.index
+4051166376.index
+2255541310.index
+2729906933.index
+1526357506.index
+1865797976.index

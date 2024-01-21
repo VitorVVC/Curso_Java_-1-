@@ -1,0 +1,381 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Employee;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		// Exercicios fixacao Vetor ( 1 )
+
+		/*
+		 * System.out.println("Quantos elementos vai ter um vetor? "); int n =
+		 * sc.nextInt();
+		 * 
+		 * int[] vect = new int[n];
+		 * 
+		 * for (int i = 0; i < vect.length; i++) {
+		 * System.out.print("Digite um numero: "); vect[i] = sc.nextInt(); }
+		 * 
+		 * System.out.println("\nNumeros NEGATIVOS: ");
+		 * 
+		 * for (int i = 0; i < vect.length; i++) { if(vect[i] < 0) {
+		 * System.out.println(vect[i]); } }
+		 */
+
+		// Exercicios fixacao Vetor ( 2 )
+
+		/*
+		 * System.out.println("Quantos numeros voce vai digitar? "); int n =
+		 * sc.nextInt();
+		 * 
+		 * double soma = 0; double media = 0; double[] vect = new double[n];
+		 * 
+		 * for (int i = 0; i < vect.length; i++) {
+		 * System.out.print("Digite um numero: "); vect[i] = sc.nextDouble(); }
+		 * 
+		 * System.out.print("VALORES = "); for (int i = 0; i < vect.length; i++) {
+		 * System.out.printf("%.1f  ",vect[i]); }
+		 * 
+		 * for(int i =0; i < vect.length; i++) { soma += vect[i];
+		 * 
+		 * }
+		 * 
+		 * media = soma / vect.length; System.out.printf("\nSOMA = %.2f",soma);
+		 * System.out.printf("\nMÉDIA = %.2f",media);
+		 */
+
+		// Exercicios fixacao Vetor ( 3 )
+
+		/*
+		 * System.out.println("Quantos pessoas serao digitadas? "); int n =
+		 * sc.nextInt(); // Podia usar uma nova classe mas para manter tudo na principal
+		 * optei por isso String[] nome = new String[n]; int[] idade = new int[n];
+		 * double[] altura = new double[n];
+		 * 
+		 * int idadeMenores = 0; double alturaMedia = 0; double alturaTotal = 0; double
+		 * percentualMenores = 0;
+		 * 
+		 * for (int i = 0; i < n; i++) { //System.out.print("Dados da " + i + 1 +
+		 * "a pessoa: "); // Método errado System.out.printf("Dados da %da pessoa: ", i
+		 * + 1); // Método correto no %da o D é substituido por i+1
+		 * System.out.print("\nNome: "); nome[i] = sc.next();
+		 * System.out.print("Idade: "); idade[i] = sc.nextInt();
+		 * System.out.print("Altura: "); altura[i] = sc.nextDouble();
+		 * 
+		 * }
+		 * 
+		 * for (int i = 0; i < n; i++) { if (idade[i] < 16) { idadeMenores++; }
+		 * alturaTotal += altura[i]; }
+		 * 
+		 * alturaMedia = alturaTotal / n; percentualMenores = ((double) idadeMenores / n
+		 * ) * 100; // Indica que é double para o print abaixo
+		 * 
+		 * System.out.printf("Altura média: %.2f",alturaMedia);
+		 * System.out.printf("\nPessoas com menos de 16 anos: %.1f%%\n"
+		 * ,percentualMenores); //%.1f%n <-- Errado
+		 * 
+		 * for (int i = 0; i < n; i++) { if (idade[i] < 16) {
+		 * System.out.printf("%n",nome[i]); } }
+		 */
+
+		// Exercicio fixacao Vetor ( 4 )
+		/*
+		 * System.out.print("Quantos números voce deseja digitar? "); int n =
+		 * sc.nextInt();
+		 * 
+		 * int quantidadePar = 0; int[] vect = new int[n];
+		 * 
+		 * for (int i = 0; i < n; i++) { System.out.print("Digite um numero: "); vect[i]
+		 * = sc.nextInt(); }
+		 * 
+		 * System.out.println("\nNumeros Pares: "); for (int i = 0; i < n; i++) { if
+		 * (vect[i] % 2 == 0) { System.out.printf("%d ",vect[i]); quantidadePar++; } }
+		 * System.out.println();
+		 * System.out.println("\nQuantidade De PARES = "+quantidadePar);
+		 */
+
+		// Exercicio fixacao Vetor ( 5 )
+
+		/*
+		 * System.out.print("Quantos numeros voce vai digitar? "); int n = sc.nextInt();
+		 * double vect[] = new double[n];
+		 * 
+		 * double maiorValor = vect[0]; int pos = 0;
+		 * 
+		 * for (int i = 0; i < vect.length; i++) {
+		 * System.out.print("Digite um numero: "); vect[i] = sc.nextDouble(); }
+		 * 
+		 * for(int i = 0; i < vect.length; i++ ) { if(maiorValor < vect[i]) { maiorValor
+		 * = vect[i]; pos = i; } }
+		 * System.out.printf("\nMaior valor = %.1f%n",maiorValor);
+		 * System.out.printf("Posicao do maior valor = %d ",pos);
+		 */
+
+		// Exercicio fixacao Vetor ( 6 )
+
+		/*
+		 * System.out.print("Quantos valores terá cada vetor? "); int n = sc.nextInt();
+		 * double[] vectA = new double[n]; double[] vectB = new double[n];
+		 * 
+		 * double[] vectSoma = new double[n];
+		 * 
+		 * System.out.print("\nDigite os valores de A: "); System.out.println(); for
+		 * (int i = 0; i < vectA.length; i++) { System.out.printf("Valor A%d: ", i + 1);
+		 * vectA[i] = sc.nextDouble(); }
+		 * 
+		 * System.out.print("\nDigite os valores de B: "); System.out.println(); for
+		 * (int i = 0; i < vectB.length; i++) { System.out.printf("Valor B%d: ", i + 1);
+		 * vectB[i] = sc.nextDouble(); }
+		 * 
+		 * System.out.println("\nVetor resultante: "); System.out.println(); for (int i
+		 * = 0; i < vectSoma.length; i++) { vectSoma[i] = vectA[i] + vectB[i];
+		 * System.out.printf("Valor C%d: %.1f\n", i + 1 ,vectSoma[i]); }
+		 */
+
+		// Exercicio fixacao Vetor ( 7 )
+
+		/*
+		 * System.out.print("Quantos elementos terá o vetor? "); int n = sc.nextInt();
+		 * 
+		 * double[] vect = new double[n];
+		 * 
+		 * double valorTotal = 0; double mediaTotal = 0; double posInf = 0;
+		 * 
+		 * for(int i = 0; i < vect.length; i++) {
+		 * System.out.print("Digite um numero: "); vect[i] = sc.nextDouble(); }
+		 * 
+		 * for( int i = 0; i < vect.length; i ++) { valorTotal += vect[i]; }
+		 * 
+		 * mediaTotal = valorTotal / vect.length;
+		 * 
+		 * System.out.printf("\nMedia vetor = %.3f\n",mediaTotal);
+		 * System.out.println("Elementos abaixo da média : ");
+		 * 
+		 * for( int i = 0; i < vect.length; i++ ) { if(vect[i] < mediaTotal) {
+		 * System.out.printf("%.1f\n",vect[i]); } }
+		 */
+
+		// Exercicio fixacao Vetor ( 8 )
+		/*
+		 * System.out.print("Quantos elementos terá o vetor? "); int n = sc.nextInt();
+		 * 
+		 * int[] vect = new int[n];
+		 * 
+		 * int nPar = 0; int somaPar = 0; double mediaPar; for (int i = 0; i <
+		 * vect.length; i++) { System.out.print("Digite um numero: "); vect[i] =
+		 * sc.nextInt(); }
+		 * 
+		 * for (int i = 0; i < vect.length; i++) { if (vect[i] % 2 == 0) { somaPar +=
+		 * vect[i]; nPar++; } }
+		 * 
+		 * if (nPar == 0) { System.out.println("Nenhum numero par"); } else { mediaPar =
+		 * (double)somaPar / nPar; System.out.printf("Media dos pares = %.1f\n",
+		 * mediaPar); }
+		 */
+
+		// Exercicio fixacao Vetor ( 9 )
+		/*
+		 * System.out.print("Quantas pessoas voce vai digitar? "); int n = sc.nextInt();
+		 * 
+		 * int[] vect = new int[n]; int[] idade = new int[n]; String[] nome = new
+		 * String[n]; int maior = vect[0]; int pos = 0; for(int i = 0; i < vect.length;
+		 * i++) { System.out.printf("Dados da %da pessoa",i+1);
+		 * System.out.print("\nNome: "); nome[i] = sc.next();
+		 * System.out.print("Idade: "); idade[i] = sc.nextInt(); }
+		 * 
+		 * for(int i = 0; i < vect.length; i++) { if( maior < idade[i]) { maior =
+		 * idade[i]; pos = i; } } System.out.println();
+		 * System.out.printf("Pessoa mais velha: %s",nome[pos]); // Com get era mto mais
+		 * facil
+		 * 
+		 */
+
+		// Exercicio fixacao Vetor ( 10 )
+
+		/*
+		 * System.out.print("Quantos alunos serão digitados? "); int n = sc.nextInt();
+		 * 
+		 * String[] nome = new String[n]; double[] av1 = new double[n]; double[] av2 =
+		 * new double[n];
+		 * 
+		 * double mediaProva = 0; for (int i = 0; i < n; i++) { System.out.
+		 * printf("Digite nome, primeira nota e segunda nota do %do aluno: \n", i + 1);
+		 * sc.nextLine(); nome[i] = sc.nextLine(); av1[i] = sc.nextDouble(); av2[i] =
+		 * sc.nextDouble(); } System.out.println("Alunos Aprovados: "); for (int i = 0;
+		 * i < n; i++) { mediaProva = av1[i] + av2[i] / 2; if (mediaProva >= 6) {
+		 * System.out.printf("%s%n", nome[i]); } }
+		 */
+
+		// Exercicio fixacao Vetor ( 11 )
+
+		/*
+		 * System.out.print("Quantas pessoas serao digitas? "); int n = sc.nextInt();
+		 * 
+		 * double[] altura = new double[n]; char[] genero = new char[n];
+		 * 
+		 * for (int i = 0; i < n; i++) { System.out.printf("Altura da %da pessoa: ", i +
+		 * 1); altura[i] = sc.nextDouble(); System.out.printf("Genero da %da pessoa: ",
+		 * i + 1); genero[i] = sc.next().charAt(0); }
+		 * 
+		 * double maiorAltura = altura[0]; double menorAltura = altura[0];
+		 * 
+		 * for (int i = 0; i < n; i++) { if (maiorAltura < altura[i]) { maiorAltura =
+		 * altura[i]; } if (menorAltura > altura[i]) { menorAltura = altura[i]; } }
+		 * 
+		 * double qtdHomens = 0; double qtdMulheres = 0; double alturaTotalF = 0; double
+		 * mediaAlturaF = 0;
+		 * 
+		 * for (int i = 0; i < n; i++) { if (genero[i] == 'm' || genero[i] == 'M') {
+		 * qtdHomens++; } if (genero[i] == 'f' || genero[i] == 'F') { alturaTotalF +=
+		 * altura[i]; qtdMulheres++; } else { throw new
+		 * IllegalArgumentException("O sistema só recebe genero feminino e masculino");
+		 * } }
+		 * 
+		 * mediaAlturaF = alturaTotalF / qtdMulheres;
+		 * 
+		 * System.out.printf("Menor Altura = %.2f%n", menorAltura);
+		 * System.out.printf("Maior Altura = %.2f%n", maiorAltura);
+		 * System.out.printf("Média das alturas das mulheres = %.2f\n", mediaAlturaF);
+		 * System.out.printf("Número de homens = %.0f\n", qtdHomens);
+		 * 
+		 * sc.close();
+		 * 
+		 */
+		// Exercicio Fixacao Vetor ( aula 93 )
+
+		/*
+		 * Pencionato[] vect = new Pencionato[10];
+		 * 
+		 * System.out.print("How many rooms will be rented? "); int n = sc.nextInt();
+		 * 
+		 * for (int i = 1; i <= n; i++) { System.out.println("\nRent #" + i + ":");
+		 * System.out.print("Name: "); sc.nextLine(); // Limpar quebra de linha do
+		 * buffer String name = sc.nextLine(); System.out.print("Email: "); String email
+		 * = sc.next(); System.out.print("Room: "); int roomNumber = sc.nextInt();
+		 * 
+		 * vect[roomNumber] = new Pencionato(name, email); }
+		 * 
+		 * System.out.println("Busy rooms: "); for (int i = 0; i < 10; i++) { if
+		 * (vect[i] != null) { System.out.println(i + ": " + vect[i]); }
+		 */
+
+		// Inicio de listas
+		/*
+		 * List<Integer> listInt = new ArrayList<>();
+		 * 
+		 * listInt.add(33); listInt.add(30); listInt.add(35); listInt.add(36);
+		 * listInt.add(10); listInt.add(1); listInt.add(12); listInt.add(13);
+		 * listInt.add(14); listInt.add(19); listInt.add(20); listInt.add(21);
+		 * listInt.add(2, 34);
+		 * 
+		 * listInt.remove(3);
+		 * 
+		 * System.out.println(listInt.size()); for (Integer listIntFilho : listInt) {
+		 * System.out.println(listIntFilho); } listInt.removeIf(x -> x.equals(33));
+		 * System.out.println(listInt); System.out.println("Index of 34: " +
+		 * listInt.indexOf(34)); System.out.println("Index of 33: " +
+		 * listInt.indexOf(33)); // Se nn encontrado retorna -1
+		 * 
+		 * List<Integer> result = listInt.stream().filter(x ->
+		 * String.valueOf(x).startsWith("1")) .collect(Collectors.toList());
+		 * 
+		 * System.out.println("Nova lista: ");
+		 * 
+		 * for (Integer resultFilho : result) { System.out.println(resultFilho); }
+		 * 
+		 * Integer um = result.stream().filter(x ->
+		 * String.valueOf(x).startsWith("1")).findFirst().orElse(null); Integer dois =
+		 * result.stream().filter(x ->
+		 * String.valueOf(x).startsWith("100")).findFirst().orElse(null);// Retorna nulo
+		 * pois nao existe System.out.println("Primeiro numero que inicie com 1: "+um);
+		 * System.out.println("Numero que inicie com 100: "+dois);
+		 */
+
+		// Exercicio de fixacao listas ( 1 )
+
+		/*
+		 * List<Employee> list = new ArrayList<>();
+		 * 
+		 * System.out.print("How many employees will be registered? "); int n =
+		 * sc.nextInt();
+		 * 
+		 * for (int i = 0; i < n; i++) { System.out.println();
+		 * System.out.println("Employee #" + (i + 1) + ":"); System.out.print("ID: ");
+		 * Integer ID = sc.nextInt(); while (hasID(list, ID)) {
+		 * System.out.println("ID alrady taken! Try again"); ID = sc.nextInt(); }
+		 * sc.nextLine(); System.out.print("Name: "); String name = sc.nextLine();
+		 * System.out.print("Salary: "); Double salary = sc.nextDouble();
+		 * 
+		 * Employee emp = new Employee(ID, name, salary);
+		 * 
+		 * list.add(emp); }
+		 * 
+		 * System.out.print("Enter the employee id that will have salary increase: ");
+		 * int idSalary = sc.nextInt(); Employee emp = list.stream().filter(x ->
+		 * x.getId() == idSalary).findFirst().orElse(null); // Integer pos =
+		 * position(list, idSalary); if (emp == null) {
+		 * System.out.println("This id does not exist!"); } else {
+		 * System.out.print("Enter the percentage: "); double percent = sc.nextDouble();
+		 * emp.increaseSalary(percent); }
+		 * 
+		 * System.out.println(""); System.out.println("List of employee: "); for
+		 * (Employee Emplo : list) { System.out.println(Emplo); } }
+		 * 
+		 * public static Integer position(List<Employee> list, int ID) { for (int i = 0;
+		 * i < list.size(); i++) { if (list.get(i).getId() == ID) { return i; } } return
+		 * null; }
+		 * 
+		 * public static boolean hasID(List<Employee> list, int ID) { Employee emp =
+		 * list.stream().filter(x -> x.getId() == ID).findFirst().orElse(null); return
+		 * emp != null;
+		 */
+
+		// Exercicio de matrizes ( Resolvido )
+
+		/*
+		 * System.out.print("Digite o tamanho da matriz quadrada : "); int n =
+		 * sc.nextInt(); int[][] matriz = new int[n][n];
+		 * 
+		 * int contNegativos = 0;
+		 * 
+		 * for (int i = 0; i < matriz.length; i++) { for (int j = 0; j <
+		 * matriz[i].length; j++) { matriz[i][j] = sc.nextInt(); } }
+		 * System.out.println("Diagonal Principal: "); for (int i = 0; i <
+		 * matriz.length; i++) { for (int j = 0; j < matriz[i].length; j++) { if
+		 * (matriz[i] == matriz[j]) { System.out.print(matriz[i][j]+ " "); } } }
+		 * System.out.println();
+		 * 
+		 * for (int i = 0; i < matriz.length; i++) { for (int j = 0; j <
+		 * matriz[i].length; j++) { if(matriz[i][j] < 0) { contNegativos ++; } } }
+		 * System.out.print("Total de numeros negativos: "+contNegativos);
+		 */
+
+		// Exercicio de matrizes ( fixacao )
+
+		System.out.print("Digite o tamanho da LINHA da matriz: ");
+		int linha = sc.nextInt();
+		System.out.print("Digite o tamanho da COLUNA da matriz: ");
+		int coluna = sc.nextInt();
+		int[][] matriz = new int[linha][coluna];
+
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+
+		
+		
+		
+		
+	}
+
+}
