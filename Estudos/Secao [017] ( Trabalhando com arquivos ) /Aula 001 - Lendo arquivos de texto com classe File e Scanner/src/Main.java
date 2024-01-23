@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        File file = new File("/Users/vitorvargas/Desktop/Cursos/Cursos JAVA/Curso Java --> 1/Estudos/Secao [017] ( Trabalhando com arquivos ) /Lendo arquivo de texto com classes File e Scanner/src/in.txt");
+        File file = new File("/Users/vitorvargas/Desktop/Cursos/Cursos JAVA/Curso Java --> 1/Estudos/Secao [017] ( Trabalhando com arquivos ) /Aula 001 - Lendo arquivos de texto com classe File e Scanner/src/in.txt");
         Scanner sc = null;
 
         try {

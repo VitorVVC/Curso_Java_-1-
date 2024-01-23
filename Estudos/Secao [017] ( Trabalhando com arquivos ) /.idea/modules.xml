@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula 001 - Lendo arquivos de texto com classe File e Scanner/Aula 001 - Lendo arquivos de texto com classe File e Scanner.iml" filepath="$PROJECT_DIR$/Aula 001 - Lendo arquivos de texto com classe File e Scanner/Aula 001 - Lendo arquivos de texto com classe File e Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Aula 001 -- Lendo arquivo de texto com classes File e Scanner.iml" filepath="$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Aula 001 -- Lendo arquivo de texto com classes File e Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 002 - FileReader e BufferedReader/Aula 002 - FileReader e BufferedReader.iml" filepath="$PROJECT_DIR$/Aula 002 - FileReader e BufferedReader/Aula 002 - FileReader e BufferedReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 003 - Bloco Try-With-Resources/Aula 003 - Bloco Try-With-Resources.iml" filepath="$PROJECT_DIR$/Aula 003 - Bloco Try-With-Resources/Aula 003 - Bloco Try-With-Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 004 - FileWriter e BufferedWriter/Aula 004 - FileWriter e BufferedWriter.iml" filepath="$PROJECT_DIR$/Aula 004 - FileWriter e BufferedWriter/Aula 004 - FileWriter e BufferedWriter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 005 - Manipulando pastas com File/Aula 005 - Manipulando pastas com File.iml" filepath="$PROJECT_DIR$/Aula 005 - Manipulando pastas com File/Aula 005 - Manipulando pastas com File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 005 -- Manipulando arquivos com File/Aula 005 -- Manipulando arquivos com File.iml" filepath="$PROJECT_DIR$/Aula 005 -- Manipulando arquivos com File/Aula 005 -- Manipulando arquivos com File.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bloco Try-With-Resources/Bloco Try-With-Resources.iml" filepath="$PROJECT_DIR$/Bloco Try-With-Resources/Bloco Try-With-Resources.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileReader E BufferedReader/FileReader E BufferedReader.iml" filepath="$PROJECT_DIR$/FileReader E BufferedReader/FileReader E BufferedReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileWriter e BufferedWriter/FileWriter e BufferedWriter.iml" filepath="$PROJECT_DIR$/FileWriter e BufferedWriter/FileWriter e BufferedWriter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Lendo arquivo de texto com classes File e Scanner.iml" filepath="$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Lendo arquivo de texto com classes File e Scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Secao [017] ( Trabalhando com arquivos ) .iml" filepath="$PROJECT_DIR$/.idea/Secao [017] ( Trabalhando com arquivos ) .iml" />
     </modules>
   </component>

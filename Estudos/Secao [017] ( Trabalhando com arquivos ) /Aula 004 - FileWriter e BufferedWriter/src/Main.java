@@ -7,7 +7,7 @@ public class Main {
 
         String[] lines = new String[]{"Good morning", "Good afternoon", "Good night"};
 
-        String path = "/Users/vitorvargas/Desktop/Cursos/Cursos JAVA/Curso Java --> 1/Estudos/Secao [017] ( Trabalhando com arquivos ) /FileWriter e BufferedWriter/src/out.txt";
+        String path = "/Users/vitorvargas/Desktop/Cursos/Cursos JAVA/Curso Java --> 1/Estudos/Secao [017] ( Trabalhando com arquivos ) /Aula 004 - FileWriter e BufferedWriter/src/out.txt";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
 
