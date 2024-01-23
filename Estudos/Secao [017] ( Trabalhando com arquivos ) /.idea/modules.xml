@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bloco Try-With-Resources/Bloco Try-With-Resources.iml" filepath="$PROJECT_DIR$/Bloco Try-With-Resources/Bloco Try-With-Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileReader E BufferedReader/FileReader E BufferedReader.iml" filepath="$PROJECT_DIR$/FileReader E BufferedReader/FileReader E BufferedReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Lendo arquivo de texto com classes File e Scanner.iml" filepath="$PROJECT_DIR$/Lendo arquivo de texto com classes File e Scanner/Lendo arquivo de texto com classes File e Scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Secao [017] ( Trabalhando com arquivos ) .iml" filepath="$PROJECT_DIR$/.idea/Secao [017] ( Trabalhando com arquivos ) .iml" />
     </modules>
